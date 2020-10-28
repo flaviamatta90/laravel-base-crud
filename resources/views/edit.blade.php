@@ -8,9 +8,13 @@
 </head>
 
 <body>
+
   <form action="{{route('books.update', $book->id)}}" method="POST">
+
     @csrf
+
     @method('PUT')
+    
     <div>
       <label for="title">Titolo</label>
       <input type="text" name="title" placeholder="Titolo" id="title" value="{{ $book->title }}">
