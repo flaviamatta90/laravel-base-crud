@@ -43,7 +43,7 @@ class BookController extends Controller
         $request->validate([
             'title' => "required|max:30",
             'author' => "required|max:50",
-            'pages' => "required|max:integer",
+            'pages' => "required|integer",
             'edition' => "required|max:50",
             'year' => "required|date",
             'isbn' => "required|unique:books|max:13",
