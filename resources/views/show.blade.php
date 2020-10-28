@@ -9,9 +9,8 @@
     <li>{{$book->isbn}}</li>
 </ul>
 
-<form action = "{{route("books.destroy", $book->$id)}}" method = "POST">
-
+<form action="{{route("books.destroy", $book->id)}}" method="POST">
     @method("DELETE")
     @csrf
     <input type="submit" value="Cancella">
-</form>
+</form
