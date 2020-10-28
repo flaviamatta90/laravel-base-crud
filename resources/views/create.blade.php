@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{route('books.store')}}" method="post">
+    <form action="{{route('books.store')}}" method="POST">
         @csrf
         @method('POST')
         <div>

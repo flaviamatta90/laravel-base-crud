@@ -1,5 +1,5 @@
 <ul>
-    {{-- <li><img src="{{$book->image}}"></li> --}}
+    <li><img src="{{$book->image}}"></li>
     <li>{{$book->title}}</li>
     <li>{{$book->author}}</li>
     <li>{{$book->genre}}</li>
@@ -9,7 +9,7 @@
     <li>{{$book->isbn}}</li>
 </ul>
 
-<form action = "{{route("books.destroy", $book->$id)}}" method = POST>
+<form action = "{{route("books.destroy", $book->$id)}}" method = "POST">
 
     @method("DELETE")
     @csrf
